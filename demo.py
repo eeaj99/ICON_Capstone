@@ -11,7 +11,8 @@ from langchain.chains import ConversationalRetrievalChain
 import PyPDF2
 
 # API KEYS
-os.environ['GROQ_API_KEY'] = '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'
+# os.environ['GROQ_API_KEY'] = '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'
+os.environ['GROQ_API_KEY'] = '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'
 
 # CHAT MODEL INITIALIZATION
 model = init_chat_model("deepseek-r1-distill-llama-70b", model_provider="groq")
