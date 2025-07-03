@@ -14,8 +14,6 @@ import PyPDF2
 load_dotenv()
 
 # API KEYS
-# os.environ['GROQ_API_KEY'] = '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'
-# os.environ['GROQ_API_KEY'] = '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'
 api_key = os.getenv("GROQ_API_KEY")
 
 # CHAT MODEL INITIALIZATION
