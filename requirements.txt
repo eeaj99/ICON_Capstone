@@ -19,3 +19,4 @@ resource
 langchain_openai
 langchain-core
 tf_keras
+pdfplumber
