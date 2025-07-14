@@ -1,98 +1,98 @@
-import os
 import streamlit as st
-import pdfplumber
-from dotenv import load_dotenv
-
 from langchain.chat_models import init_chat_model
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_core.documents import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.prompts import ChatPromptTemplate
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain
+from langchain_openai import OpenAIEmbeddings
 
-# Load environment variables
-load_dotenv()
-api_key = os.getenv("GROQ_API_KEY")
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
+from config import load_api_key, load_document_config
+from prompts import get_prompt_template
+from rag_engine import extract_text_from_pdfs, vectorize_text, create_qa_chain
 
-# Initialize model and embeddings
-model = init_chat_model("deepseek-r1-distill-llama-70b", model_provider="groq")
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+# App config
+st.set_page_config(page_title="ADE Document Assistant", layout="wide")
+# st.header("ADE Document Assistant")
+st.markdown("""
+    <style>
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 12px;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 210px;
+            z-index: 9999;
+            border-bottom: 1px solid #ccc;
+        }
+        .main {
+            padding-top: 70px;  
+        }
+    </style>
+    <div class="fixed-header">ADE Document Assistant</div>
+""", unsafe_allow_html=True)
 
-# Prompt template
-prompt_template = ChatPromptTemplate.from_messages([
-    ("system", """
-        You are a responsible and professional assistant designed to support Adverse Event (AE) reporting for pharmaceutical products. Your task is to extract only the most relevant sentences from the provided context to answer the user's question.
 
-        Disallowed answering patterns:
-        <think> We might consider this...
-        <reasoning> Because X implies Y...
-     
-        Instructions:
-        1. Base your response strictly on the provided context. Do not use external knowledge.
-        2. Ignore any sections labeled "Table of Contents" and "Index". Do not extract content from these sections.
-        3. Do not include any <think>, <thought>, or internal reasoning tags.
-        4. Return 'NO RELEVANT CONTEXT FOUND' if nothing applies.
-        5. If the question is not related to AE reporting, respond with: "This question is not related to Adverse Event reporting. Please ask a relevant question."
-    """),
-    ("human", "Context:\n{context}\n\nQuestion:\n{question}")
-])
 
-# PDF text extraction
-def extract_text_from_pdfs(uploaded_files):
-    full_text = []
-    for file in uploaded_files:
-        with pdfplumber.open(file) as pdf:
-            for page in pdf.pages:
-                text = page.extract_text()
-                if text:
-                    full_text.append(text)
-    return "\n".join(full_text)
+# Load API key and models
+api_key = load_api_key()
+model = init_chat_model("gpt-4o-mini", model_provider="openai")
+embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+prompt_template = get_prompt_template()
+doc_config = load_document_config()
 
-# Vectorization
-def vectorize_text(text):
-    docs = [Document(page_content=text)]
-    chunks = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200).split_documents(docs)
-    return FAISS.from_documents(chunks, embeddings)
-
-# Streamlit UI
-st.set_page_config(page_title="AE RAG Assistant", layout="wide")
-st.title("Adverse Event RAG Assistant")
-
+# Sidebar for file upload
+# with st.sidebar:
+    # st.subheader("Upload Documents")
+    # uploaded_files = st.file_uploader("Upload one or more PDF files", type="pdf", accept_multiple_files=True)
+    # if uploaded_files and st.button("Process Documents"):
+    #     with st.spinner("Reading and vectorizing documents..."):
+    #         text = extract_text_from_pdfs(uploaded_files)
+    #         vectorstore = vectorize_text(text, embeddings)
+    #         retriever = vectorstore.as_retriever(search_type="similarity", k=5)
+    #         st.session_state.qa_chain = create_qa_chain(model, retriever, prompt_template)
+    #         st.success("Ready to chat with your documents.")
+    # Sidebar for document selection
 with st.sidebar:
-    st.header("Upload Documents")
-    uploaded_files = st.file_uploader("Upload one or more PDF files", type="pdf", accept_multiple_files=True)
-    if uploaded_files and st.button("Process Documents"):
-        with st.spinner("Reading and vectorizing documents..."):
-            text = extract_text_from_pdfs(uploaded_files)
-            vectorstore = vectorize_text(text)
-            retriever = vectorstore.as_retriever(search_type="similarity", k=5)
-            memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key="answer")
-            qa_chain = ConversationalRetrievalChain.from_llm(
-                llm=model,
-                retriever=retriever,
-                memory=memory,
-                return_source_documents=True,
-                combine_docs_chain_kwargs={"prompt": prompt_template},
-                output_key="answer"
-            )
-            st.session_state.qa_chain = qa_chain
-            st.success("Ready to chat with your documents.")
+    # st.subheader("Select Document")
+    doc_options = []
+    doc_map = {}
+    for org_docs in doc_config.values():
+        for doc_name, doc_path in org_docs.items():
+            doc_options.append(doc_name)
+            doc_map[doc_name] = doc_path
+
+    selected_doc = st.radio(label="Select Document", options=doc_options)
+    selected_path = doc_map[selected_doc]
+    selected_key = selected_doc 
+
+    if st.button("Load Document"):
+        if selected_key not in st.session_state:
+            with st.spinner("Loading and vectorizing document..."):
+                with open(selected_path, "rb") as f:
+                    text = extract_text_from_pdfs([f])
+                vectorstore = vectorize_text(text, embeddings)
+                retriever = vectorstore.as_retriever(search_type="similarity", k=5)
+                st.session_state[selected_key] = create_qa_chain(model, retriever, prompt_template)
+        st.session_state.qa_chain = st.session_state[selected_key]
+        st.success(f"{selected_doc} loaded successfully.")
+
+
+
+
 
 # Chat Interface
 if "qa_chain" in st.session_state:
-    st.subheader("Ask a question")
-    user_question = st.text_input("Enter your question")
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
 
-    if user_question:
-        with st.spinner("Fetching response..."):
-            response = st.session_state.qa_chain.invoke({"question": user_question})
-            st.markdown("### Answer")
-            st.write(response["answer"])
+    user_input = st.chat_input("Ask a question")
+    if user_input:
+        # with st.spinner("Fetching response..."):
+        response = st.session_state.qa_chain.invoke({"question": user_input})
+        answer = response["answer"]
+        st.session_state.chat_history.append({"role": "user", "content": user_input})
+        st.session_state.chat_history.append({"role": "assistant", "content": answer})
 
-            with st.expander("Retrieved Context"):
-                for i, doc in enumerate(response["source_documents"]):
-                    st.markdown(f"**Chunk {i+1}**")
-                    st.write(doc.page_content)
+    for msg in st.session_state.chat_history:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])

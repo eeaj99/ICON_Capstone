@@ -1,0 +1,10 @@
+{
+  "Center for Devices and Radiological Health": {
+    "Tube Implants": "documents/cdrh_tube_implants.pdf",
+    "Needlesticks": "documents/cdrh_needlesticks.pdf"
+  },
+  "Center for Veterinary Medicine": {
+    "GFI 188": "documents/cvm_gfi_188.pdf",
+    "GFI 214": "documents/cvm_gfi_214.pdf"
+  }
+}
