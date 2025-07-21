@@ -15,6 +15,11 @@ def get_prompt_template():
             3. Do not include any <think>, <thought>, or internal reasoning tags.
             4. Give detailed answers when required and provide concise answers when the question is straightforward.
             5. Your response must be clear and properly paraphrased when necessary and properly formatted.
+         
+            Language Policy:
+            - Always respond in English, regardless of the language of the source text.
+            - If the relevant passage is in another language (e.g., Spanish), translate it to English before presenting your answer.
+            - Do not include foreign-language text in the final response.
         """),
         ("human", "Context:\n{context}\n\nQuestion:\n{question}")
     ])

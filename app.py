@@ -6,32 +6,14 @@ from config import load_api_key, load_document_config
 from prompts import get_prompt_template
 from rag_engine import extract_text_from_pdfs, vectorize_text, create_qa_chain
 
+def load_css(file_path):
+    with open(file_path) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_css("style.css")
+
 # App config
 st.set_page_config(page_title="ADE Document Assistant", layout="wide")
-# st.header("ADE Document Assistant")
-st.markdown("""
-    <style>
-        .fixed-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            padding: 12px;
-            font-size: 20px;
-            text-align: left;
-            margin-left: 210px;
-            z-index: 9999;
-            border-bottom: 1px solid #ccc;
-        }
-        .main {
-            padding-top: 70px;  
-        }
-    </style>
-    <div class="fixed-header">ADE Document Assistant</div>
-""", unsafe_allow_html=True)
-
-
 
 # Load API key and models
 api_key = load_api_key()
@@ -40,45 +22,47 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 prompt_template = get_prompt_template()
 doc_config = load_document_config()
 
-# Sidebar for file upload
-# with st.sidebar:
-    # st.subheader("Upload Documents")
-    # uploaded_files = st.file_uploader("Upload one or more PDF files", type="pdf", accept_multiple_files=True)
-    # if uploaded_files and st.button("Process Documents"):
-    #     with st.spinner("Reading and vectorizing documents..."):
-    #         text = extract_text_from_pdfs(uploaded_files)
-    #         vectorstore = vectorize_text(text, embeddings)
-    #         retriever = vectorstore.as_retriever(search_type="similarity", k=5)
-    #         st.session_state.qa_chain = create_qa_chain(model, retriever, prompt_template)
-    #         st.success("Ready to chat with your documents.")
-    # Sidebar for document selection
-with st.sidebar:
-    # st.subheader("Select Document")
-    doc_options = []
-    doc_map = {}
-    for org_docs in doc_config.values():
-        for doc_name, doc_path in org_docs.items():
-            doc_options.append(doc_name)
-            doc_map[doc_name] = doc_path
 
-    selected_doc = st.radio(label="Select Document", options=doc_options)
-    selected_path = doc_map[selected_doc]
-    selected_key = selected_doc 
+st.markdown("""
+<div class="fixed-header">
+    <div class="header-container">
+        <div class="header-title">ADE Document Assistant</div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
-    if st.button("Load Document"):
-        if selected_key not in st.session_state:
-            with st.spinner("Loading and vectorizing document..."):
-                with open(selected_path, "rb") as f:
+st.markdown("<p style='margin-bottom: 0.2rem;'>Select FDA Organization</p>", unsafe_allow_html=True)
+with st.container():
+    col1, col2 = st.columns([4, 3])
+    with col1:
+        fda_organizations = list(doc_config.keys())
+        selected_org = st.selectbox("", fda_organizations, label_visibility="collapsed")
+    with col2:
+        button_col, msg_col = st.columns([1, 2])
+        with button_col:
+            load_clicked = st.button("Load Documents")
+        with msg_col:
+            message_placeholder = st.empty()
+
+if load_clicked:
+    with message_placeholder:
+        with st.spinner(""):
+            org_docs = doc_config[selected_org]  # dict of {doc_name: doc_path}
+            all_texts = []
+
+            for doc_name, doc_path in org_docs.items():
+                with open(doc_path, "rb") as f:
                     text = extract_text_from_pdfs([f])
-                vectorstore = vectorize_text(text, embeddings)
-                retriever = vectorstore.as_retriever(search_type="similarity", k=5)
-                st.session_state[selected_key] = create_qa_chain(model, retriever, prompt_template)
-        st.session_state.qa_chain = st.session_state[selected_key]
-        st.success(f"{selected_doc} loaded successfully.")
+                    all_texts.append(text)
 
-
-
-
+            # Combine all text and create a single vectorstore
+            combined_text = "\n".join(all_texts)
+            vectorstore = vectorize_text(combined_text, embeddings)
+            retriever = vectorstore.as_retriever(search_type="similarity", k=5)
+            st.session_state.qa_chain = create_qa_chain(model, retriever, prompt_template)
+        
+        # Success message replaces the spinner in the same location
+        st.text(f"Loaded {len(org_docs)} documents.")
 
 # Chat Interface
 if "qa_chain" in st.session_state:
