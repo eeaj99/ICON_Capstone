@@ -1,0 +1,587 @@
+[
+  {
+    "question": "What is the definition of Adverse Event (AE)?",
+    "standard_answer": "Any observation in animals, whether or not considered to be product-related, that is unfavorable and unintended and that occurs after any use of a Veterinary Medicinal Product (VMP), including both off-label and on-label uses.",
+    "chatbot_answer": "An adverse event (AE) is any observation in animals, whether or not considered to be product-related, that is unfavorable and unintended, occurring after any use of a veterinary medicinal product (VMP), including both off-label and on-label uses. It includes events related to a suspected lack of expected efficacy according to approvedlabeling or noxious reactions in humans exposed to VMP(s)."
+  },
+  {
+    "question": "Who can initiate an Adverse Event Report (AER)?",
+    "standard_answer": "An Adverse Event Report (AER) may be initiated by anyone directly involved with the purported adverse event.",
+    "chatbot_answer": "An Adverse Event Report (AER) may be initiated by anyone directly involved with the purported adverse event.Although reporting via the attending veterinarian is encouraged, the AER preferably should be communicated directly to the Marketing Authorization Holder (MAH). If routed through an agent or the Regulatory Authority (RA), the AER should only be considered valid if the agent has been authorized by the reporter and providessufficient information for direct contact between the reporter and the MAH."
+  },
+  {
+    "question": "What is the role of the Marketing Authorization Holder\n (MAH) in the AER process?",
+    "standard_answer": "The role of the MAH is to receive, evaluate and report AERs to the appropriate RA(s) in accordance with local requirements.",
+    "chatbot_answer": "The Marketing Authorization Holder (MAH) is responsible for the pharmacovigilance of the veterinary medicinal product (VMP). This includes submitting adverse event reports (AERs) to regional authorities as mandated by relevant laws or legislation, either as expedited or periodic submissions. The MAH must also record each AER received and ensure it is stored for easy access. Additionally, the MAH is tasked with submitting a periodic summary update to the regulatory authority, which includes\nan analysis of all AERs received during the specified interval."
+  },
+  {
+    "question": "What does 'unexpected adverse event' mean?",
+    "standard_answer": "An unexpected adverse event is an adverse event of which the nature, severity or outcome is not consistent with approved labeling or approved documents describing expected adverse events for a VMP.",
+    "chatbot_answer": "An unexpected adverse event is an adverse event whose nature, severity, or outcome is not consistent with approved labeling or approved documents describing expected adverse events for a veterinary medicinal product (VMP)."
+  },
+  {
+    "question": "What are considered serious adverse events?",
+    "standard_answer": "A serious adverse event is any adverse event which results in death, is life-threatening, results in persistent or significant disability/incapacity, or a congenital anomaly or birth defect. ",
+    "chatbot_answer": "A serious adverse event is defined as any adverse event that results in death, is life-threatening, results in persistent or significant disability/incapacity, or leads to a congenital anomaly or birth defect. For animals managed and treated as a group, only an increased incidence of serious adverse events exceeding the rates normally expected in that particular group is considered serious."
+  },
+  {
+    "question": "What is the purpose of the International Birth Date (IBD) \nin AER reporting?",
+    "standard_answer": "International Birth Date (IBD) is the date of the first marketing authorization for same or similar product granted in any VICH region.",
+    "chatbot_answer": "The International Birth Date (IBD) is the date of the first marketing authorization for the same or similar product granted in any VICH region."
+  },
+  {
+    "question": "How is expedited reporting triggered for serious AERs?",
+    "standard_answer": "Expedited reporting is triggered for serious and unexpected adverse drug events (ADEs), which must be submitted as a Fifteen-day NADA/ANADA Alert Report in accordance with 21 CFR 514.80(b)(2)",
+    "chatbot_answer": "Expedited reporting for serious Adverse Event Reports (AERs) is triggered under the following conditions:\nIf an AER is classified as an expedited submission in the country where it occurs.\nIf the same Veterinary Medicinal Product (VMP) is approved in other VICH regions/observer countries.\nIf the species of animal involved in the AER is approved in the other VICH regions/observer countries.\nIf there are serious implications regarding human safety.\nThe timeclock for the expedited submission begins when the AER becomes known to the Marketing Authorization Holder (MAH) in the other region."
+  },
+  {
+    "question": "What is the difference between expedited and periodic AER submissions?",
+    "standard_answer": "Expedited AER submissions are required for serious and unexpected adverse drug events and must be reported as Fifteen-day NADA/ANADA Alert Reports under 21 CFR 514.80(b)(2). In contrast, Periodic AER submissions are for all other adverse drug events and product/manufacturing defects and are submitted as part of the Drug Experience Report under 21 CFR 514.80(b)(4)",
+    "chatbot_answer": "Expedited AER submissions are required when there are serious implications regarding human safety or due to the seriousness or unexpectedness of the reported event, while periodic AER submissions must occur at regular intervals for all AERs not previously submitted. Expedited submissions begin when the AER is known to the marketing authorization holder (MAH) in a region where the veterinary medicinal product (VMP) is approved, whereas periodic submissions follow specific scheduling requirements outlined in regulations."
+  },
+  {
+    "question": "What does the term \"Regulatory Authority (RA)\" refer to?",
+    "standard_answer": "The government agency or authority to which the Adverse Event Report (AER) is initially submitted based on which RA has the authority to regulate the product. For Veterinary Medicinal Products (VMPs) in the United States, the RA is the FDA, Center for Veterinary Medicine(CVM)GFI188.",
+    "chatbot_answer": "The term \"Regulatory Authority (RA)\" refers to the national or regional authority that is responsible for issuing, adapting, or withdrawing marketing authorizations/licenses of veterinary medicinal products (VMPs) and for pharmacovigilance activities."
+  },
+  {
+    "question": "What is the recommended format for information flow in the pharmacovigilance system?",
+    "standard_answer": "Information should preferably flow from the reporter to the Marketing Authorization Holder (MAH), and then from the MAH to the Regulatory Authority (RA).An alternate path exists where the reporter communicates directly with the RA, and the RA then notifies the MAH of the received Adverse Event Report (AER).",
+    "chatbot_answer": "The recommended format for information flow in the pharmacovigilance system involves data preferably flowing where the reporter communicates with the Marketing Authorization Holder (MAH), and the MAH submits Adverse Event Reports (AERs) it has received to the regulatory authority (RA). An alternate path shows the reporter communicating directly with the RA, which then notifies the MAH of the AERs it has received."
+  },
+  {
+    "question": "What is the purpose of the Periodic Summary Update (PSU)?",
+    "standard_answer": "The PSU is submitted at set intervals to support the continued marketing of a VMP and to assess the adequacy of its approved labelling. It includes an analysis of all Adverse Event Reports (AERs) received during the interval",
+    "chatbot_answer": "The purpose of the Periodic Summary Update (PSU) is to support the continued marketing and the adequacy of the approved \nlabeling of the veterinary medicinal product (VMP). It includes an analysis of all Adverse Event Reports (AERs) received during\n the specified interval."
+  },
+  {
+    "question": "Which events should be included in a PSU report?",
+    "standard_answer": "All AERs for the same VMP received during the reporting period, including those from inside and outside the region, should be included. These are submitted in line listings or full reports depending on regional rules",
+    "chatbot_answer": "A Periodic Summary Update (PSU) report should include an analysis of all Adverse Event Reports (AERs) received during the reporting interval."
+  },
+  {
+    "question": "How is the International Birth Date (IBD) used to align periodic reporting timelines?",
+    "standard_answer": "The IBD is the date of the first marketing authorization granted in any VICH country. It serves as the harmonization anchor for MAH reporting timelines. The IBD may optionally be adjusted to the last day of that month",
+    "chatbot_answer": "The International Birth Date (IBD) is the date of the first marketing authorization for a same or similar product granted in any VICH region,\n which helps in determining the reporting timelines for adverse event reports (AERs) and ensures consistency in pharmacovigilance \nactivities across regions. It serves as a reference point for establishing the periodic reporting intervals for AER submissions."
+  },
+  {
+    "question": "What information about sales volume is recommended in PSUs?",
+    "standard_answer": "Sales volume should be presented in a way that allows for incidence calculation (e.g., number of AEs per country relative to sales volume). When species-level usage is unknown, theoretical estimates may be used but should be labeled as arbitraryCVM-GFI--142-(VICH-GL29\u2026.\n",
+    "chatbot_answer": "The provided context does not mention any recommendations regarding sales volume in Periodic Summary Updates (PSUs). It focuses \non the submission of adverse event reports (AERs) and the responsibilities of the Marketing Authorization Holder and Regulatory Authority."
+  },
+  {
+    "question": "What kind of label text should accompany a PSU submission?",
+    "standard_answer": "The PSU should include the approved label text or approved VMP documentation for the region or country",
+    "chatbot_answer": "The Periodic Summary Update (PSU) submission should include an analysis of all Adverse Event Reports (AERs) received during the\n interval to support the continued marketing and the adequacy of the approved labeling of the Veterinary Medicinal Product (VMP)."
+  },
+  {
+    "question": "What type of safety concerns are evaluated in the PSU narrative review?",
+    "standard_answer": "The narrative should address:\nUnidentified toxicity/safety concerns\nIncreased frequency of known AEs\nDrug interactions\nOverdose and treatment\nOff-label use AEs\nHuman AEs from VMP use\nThe expert review must comment on whether safety data remain consistent with cumulative experience and labelling",
+    "chatbot_answer": "The Periodic Summary Update (PSU) includes an analysis of all Adverse Event Reports (AERs) received during the reporting interval. \nThis evaluation supports the continued marketing and the adequacy of the approved labeling of the Veterinary Medicinal Product (VMP)."
+  },
+  {
+    "question": "How should human adverse events associated with VMP use be reported in the PSU?",
+    "standard_answer": "They must be discussed in the narrative safety evaluation section of the PSU. The MAH must comment on any important new information involving human AEs related to the VMP",
+    "chatbot_answer": "Human adverse events associated with the use of veterinary medicinal products (VMPs) should be reported in the Periodic Summary Update (PSU) \nby including all adverse event reports (AERs) that have not been previously submitted. The Marketing Authorization Holder (MAH) is responsible \nfor this submission at regular intervals, as outlined in the relevant regulations."
+  },
+  {
+    "question": "How should drug interaction and overdose information be presented in PSUs?",
+    "standard_answer": "Drug interactions and overdoses (including treatment details) should be explicitly reviewed in the narrative safety evaluation, as part of the critical analysis of AERs",
+    "chatbot_answer": "The provided context does not contain specific information regarding how drug interaction and overdose information should be presented \nin Periodic Summary Updates (PSUs). It only mentions that the PSU includes an analysis of all Adverse Event Reports (AERs) received during the\n interval. For detailed guidance on presenting drug interaction and overdose information, additional references would be necessary."
+  },
+  {
+    "question": "What role does the Marketing Authorization Holder (MAH) have in PSU preparation?",
+    "standard_answer": "The MAH is responsible for compiling the PSU, including gathering AER data, providing expert safety evaluations, commenting on label consistency, and reporting sales volume, label text, and actions taken",
+    "chatbot_answer": "The Marketing Authorization Holder (MAH) is responsible for submitting the Periodic Summary Update (PSU) to the Regulatory \nAuthority at set intervals to support continued marketing. The PSU will include an analysis of all adverse event reports (AERs) received \nduring the interval."
+  },
+  {
+    "question": "What actions require updates under \"actions taken for safety reasons\"?",
+    "standard_answer": "The PSU must include RA- or MAH-initiated actions, or pending actions, taken globally for safety reasons. These updates should be documented as a brief narrative with reasoning and supporting documentation if needed",
+    "chatbot_answer": "The following actions require updates under \"actions taken for safety reasons\":\n\nIf the Regulatory Authority (RA) decides on a regulatory action based on expedited submissions related to Adverse Event Reports (AERs),\n the Marketing Authorization Holder (MAH) must immediately inform all VICH regions/observer country RAs where the same Veterinary \nMedicinal Product (VMP) is approved about this action.\n\nWhen the MAH determines that it is likely that actions will be implemented based on the AERs received, the MAH must contact all VICH \nregions/observer RAs where the same VMP is approved to inform them of its concerns and likely actions."
+  },
+  {
+    "question": "Why are controlled lists of terms important in veterinary pharmacovigilance?",
+    "standard_answer": "Controlled lists ensure consistency and comparability between products and across product classes. They enable uniform data input, facilitate trend analysis, and support reliable safety and efficacy assessments of veterinary medicinal products",
+    "chatbot_answer": "Controlled lists ensure consistency and comparability between products and across product classes. They enable uniform data input, facilitate trend analysis, and support reliable safety and efficacy assessments of veterinary medicinal products"
+  },
+  {
+    "question": "What are the categories under Reporter Categories?",
+    "standard_answer": "Examples include veterinarian, pharmacist, animal owner, and manufacturer representative. These are listed under FDACVM GFI#188 A.3.1.1 and A.3.2.1",
+    "chatbot_answer": "Examples include veterinarian, pharmacist, animal owner, and manufacturer representative. These are listed under FDACVM GFI#188 A.3.1.1 and A.3.2.1"
+  },
+  {
+    "question": "What does unspecified mean in breed reporting?",
+    "standard_answer": "Unspecified indicates the general breed is known, but the specific subtype is not, e.g., \"German Pointing Dog (unspecified)\" when the hair type (short/wire) is unknown",
+    "chatbot_answer": "Unspecified indicates the general breed is known, but the specific subtype is not, e.g., \"German Pointing Dog (unspecified)\" when the hair type (short/wire) is unknown"
+  },
+  {
+    "question": "What does mixed mean in breed reporting?",
+    "standard_answer": "Mixed is used when multiple breeds are involved, and it is not possible or useful to specify each one, e.g., \u201cMixed (cattle)\u201d",
+    "chatbot_answer": "Mixed is used when multiple breeds are involved, and it is not possible or useful to specify each one, e.g., \u201cMixed (cattle)\u201d"
+  },
+  {
+    "question": "What controlled terms are used for \"Route of Exposure\"?",
+    "standard_answer": "A less detailed interim list by FDA is used, including typical routes for veterinary products. This will eventually be replaced by a comprehensive ISO-based list developed under ISOprEN 11239",
+    "chatbot_answer": "A less detailed interim list by FDA is used, including typical routes for veterinary products. This will eventually be replaced by a comprehensive ISO-based list developed under ISOprEN 11239"
+  },
+  {
+    "question": "What are examples of \"Units of Presentation\" in reports?",
+    "standard_answer": "Examples include units like tablet, vial, or bottle, used to define how a veterinary medicinal product is packaged or administered",
+    "chatbot_answer": "Examples of \"Units of Presentation\" in reports include specific entries listed under sections B.2.1.7.1.1.1, B.2.1.7.1.2.1, and B.2.2.1.2.1 as\n per FDA/CVM GFI#188."
+  },
+  {
+    "question": "What coding system is used for Off-Label Use coding?",
+    "standard_answer": "A system based on nine sequential questions covering species, administration, overdose, underdose, regimen, indication, storage, expiration, and other deviations",
+    "chatbot_answer": "A system based on nine sequential questions covering species, administration, overdose, underdose, regimen, indication, storage, expiration, and other deviations"
+  },
+  {
+    "question": "What is the purpose of RA Assessment controlled codes?",
+    "standard_answer": "RA Assessment codes are used to standardise regulatory authority evaluations of adverse event report causality and impact",
+    "chatbot_answer": "RA Assessment codes are used to standardise regulatory authority evaluations of adverse event report causality and impact"
+  },
+  {
+    "question": "How often are these controlled lists updated, and who maintains them?",
+    "standard_answer": "The lists are updated annually through a Maintenance Committee involving FDA, EMA, and other VICH regions. Updates are posted within 30 days of finalisationCVM-GFI--143-(VICH-GL30\u2026",
+    "chatbot_answer": "The lists are updated annually through a Maintenance Committee involving FDA, EMA, and other VICH regions. Updates are posted within 30 days of finalisationCVM-GFI--143-(VICH-GL30\u2026"
+  },
+  {
+    "question": "What is the eMDR Final Rule?",
+    "standard_answer": "The eMDR Final Rule, effective August 14, 2015, mandates that manufacturers and importers submit mandatory Medical Device Reports (MDRs) electronically to the FDA. It amends 21 CFR Part 803 to replace paper reporting with a more efficient electronic submission process",
+    "chatbot_answer": "The eMDR Final Rule requires device manufacturers and importers to submit mandatory reports of individual medical device adverse\n events, known as medical device reports (MDRs), to the FDA in an electronic format that the Agency can process, review, and archive. \nThis rule will take effect on August 14, 2015. Although electronic reporting is available to user facilities, they are permitted to continue \nsubmitting only written reports to the FDA."
+  },
+  {
+    "question": "Who is required to submit MDRs electronically?",
+    "standard_answer": "Manufacturers and importers are required to submit MDRs electronically. User facilities may continue using paper forms but are encouraged to use electronic submissions voluntarily",
+    "chatbot_answer": "Manufacturers and importers are required to submit mandatory reports of individual medical device adverse events (MDRs) to the \nFDA in an electronic format. User facilities are also permitted to submit MDRs electronically, but they may continue to submit written \nreports."
+  },
+  {
+    "question": "Can user facilities submit reports electronically under eMDR?",
+    "standard_answer": "Yes, user facilities can submit eMDRs voluntarily, although they are not required to under the Final Rule. They may still use paper submissions if preferred",
+    "chatbot_answer": "Yes, user facilities can submit reports electronically under the eMDR Final Rule; however, they are also permitted to continue \nsubmitting written reports to the FDA."
+  },
+  {
+    "question": "What is the FDA Electronic Submissions Gateway (ESG)?",
+    "standard_answer": "The ESG is a secure and central transmission point for sending electronic information to the FDA. To use it for eMDR submissions, entities must register, test their setup, and obtain production credentials",
+    "chatbot_answer": "The FDA Electronic Submissions Gateway (ESG) is a system that allows users to submit electronic Medical Device Reports (eMDRs) to the \nFDA. To submit MDRs electronically, users must set up a Web Trader Account and submit test data that successfully processes through \nthe ESG before receiving a production account for actual submissions. Additionally, guidance and detailed instructions for using the ESG\ncan be found on the FDA's official website.\n\n"
+  },
+  {
+    "question": "What information should be included in follow-up or supplemental reports?",
+    "standard_answer": "Reports must indicate that the submission is a follow-up or supplemental report and include the \noriginal MDR report number. Only updated or corrected information should be included. \nUnchanged fields (e.g., patient age) should not be repeated.",
+    "chatbot_answer": "Reports must indicate that the submission is a follow-up or supplemental report and include the \noriginal MDR report number. Only updated or corrected information should be included. \nUnchanged fields (e.g., patient age) should not be repeated."
+  },
+  {
+    "question": "What happens if a submission system experiences outages?",
+    "standard_answer": "If the ESG or CDRH eMDR system is down, submitters should:\nDocument the outage in Block H10 of the affected report.\nNotify FDA via eMDR@fda.hhs.gov.\nSubmit the reports once systems are operational.\nIf the outage is internal (e.g., the submitter's system), FDA may offer alternative submission instructions",
+    "chatbot_answer": "If a submission system experiences outages, manufacturers or importers should document their attempts at timely filing in\n Block H10 for the affected reports and submit reports electronically as soon as the system is operational. If the outage affects \nthe reporting entity's own system and timely reporting, they should contact the FDA at eMDR@fda.hhs.gov, providing details\n about the problem, the number of reports affected, and an estimated resolution time. Additionally, when an alternative \nmethod is used during a system outage, the FDA will respond with an Acknowledgment that documents the report's \nstatus."
+  },
+  {
+    "question": "How does FDA ensure the security of eMDR transmissions?",
+    "standard_answer": "Security is ensured using:\n\nDigital certificates\n\nNon-repudiation agreements\n\nUse of the ESG, which complies with standards for authentication, encryption, and integrity of transmitted data",
+    "chatbot_answer": "Security is ensured using:\n\nDigital certificates\n\nNon-repudiation agreements\n\nUse of the ESG, which complies with standards for authentication, encryption, and integrity of transmitted data"
+  },
+  {
+    "question": "What kind of file format is used for eMDR submissions?",
+    "standard_answer": "eMDRs are submitted in Health Level Seven (HL7) Individual Case Safety Report (ICSR) format, a machine-readable XML format designed for structured safety data",
+    "chatbot_answer": "eMDRs are submitted in Health Level Seven (HL7) Individual Case Safety Report (ICSR) format, a machine-readable XML format designed for structured safety data"
+  },
+  {
+    "question": "How can reporters get support for eMDR submissions?",
+    "standard_answer": "Support is available via:\nEmail: eMDR@fda.hhs.gov\nESG Help Desk\nFDA eSubmitter portal documentation\nThe FDA eMDR Status Page for real-time system update",
+    "chatbot_answer": "Support is available via:\nEmail: eMDR@fda.hhs.gov\nESG Help Desk\nFDA eSubmitter portal documentation\nThe FDA eMDR Status Page for real-time system update"
+  },
+  {
+    "question": "What are some additional sources of information provided by FDA for eMDR?",
+    "standard_answer": "Helpful resources include:\nFDA eMDR site\nFDA eSubmitter info\nHL7 ICSR guidance ",
+    "chatbot_answer": "The FDA provides additional sources of information for eMDR including:\n\nThe final rule on Medical Device Reporting: Electronic Submission Requirements, found at 79 FR DOC 2014-03279, February 13, 2014.\nInformation available on the FDA's website regarding Electronic Medical Device Reporting.\nThe eSubmitter program, which allows for the attachment of labeling or documents to eMDR reports.\nHealth Level Seven (HL7) Individual Case Safety Reporting, which offers the capability to submit eMDRs individually or in batches.\nFor more detailed information, refer to the FDA resources linked in the guidance document."
+  },
+  {
+    "question": "What is the purpose of Medical Device Reporting (MDR)?",
+    "standard_answer": "The purpose of MDR is to help FDA and manufacturers detect and correct problems related to adverse events, such as deaths, serious injuries, or certain device malfunctions, in a timely manner. It enables postmarket surveillance through mandatory reporting and recordkeeping.",
+    "chatbot_answer": "The purpose of the Medical Device Reporting (MDR) regulation is to provide a mechanism for the FDA and device manufacturers to identify and monitor adverse events, such as deaths and serious injuries, and certain malfunctions involving medical devices. The goal is to detect and correct problems in a timely manner."
+  },
+  {
+    "question": "Which entities are considered manufacturers under MDR rules?",
+    "standard_answer": "A manufacturer is any person who:\nManufactures, prepares, propagates, compiles, assembles, or processes a device.Repackages, relabels, or modifies the container or labeling.\nInitiates specifications for private-label devices.\nMakes components or accessories that are devices themselves and ready to be used.\nThis includes foreign manufacturers exporting to the U.S. ",
+    "chatbot_answer": "Under the MDR rules, a \"manufacturer\" includes any person who:\n\nManufactures, prepares, propagates, compounds, assembles, or processes a device by chemical, physical, biological, or other procedures.\nRepackages or changes the container, wrapper, or labeling of a device for distribution from the original place of manufacture.\nInitiates specifications for devices manufactured by a second party for subsequent distribution.\nManufactures components or accessories intended for commercial distribution or processed by a licensed practitioner to meet patient\nneeds.Additionally, any person who reprocesses a single-use device for reuse in humans becomes the manufacturer of that device and is\nsubject to all requirements applicable to the original manufacturer."
+  },
+  {
+    "question": "What defines an MDR reportable event?",
+    "standard_answer": "An MDR reportable event occurs when a manufacturer becomes aware that:\nA device may have caused or contributed to a death or serious injury, or\nA malfunction would likely cause or contribute to death or serious injury if it were to recur.",
+    "chatbot_answer": "The purpose of the MDR regulation is to provide a mechanism that allows the FDA and device manufacturers to identify and monitor\n adverse events, including deaths and serious injuries, as well as certain malfunctions involving medical devices. The goal is to detect \nand correct problems in a timely manner. The requirements of the MDR regulation are enforced under the authority of the FD&C Act.\n\n"
+  },
+  {
+    "question": "How is \"serious injury\" defined under MDR?",
+    "standard_answer": "A \u201cserious injury\u201d is:\nLife-threatening.\nCauses permanent impairment or damage.\nRequires medical/surgical intervention to prevent permanent impairment.\n\u201cPermanent\u201d implies irreversible damage. ",
+    "chatbot_answer": "A \u201cserious injury\u201d is:\nLife-threatening.\nCauses permanent impairment or damage.\nRequires medical/surgical intervention to prevent permanent impairment.\n\u201cPermanent\u201d implies irreversible damage."
+  },
+  {
+    "question": "What is the time frame for submitting a 30-day report?",
+    "standard_answer": "Manufacturers must submit a 30-day MDR report within 30 calendar days after becoming aware\nof a reportable death, serious injury, or malfunction.",
+    "chatbot_answer": "Manufacturers must submit a 30-day MDR report within 30 calendar days after becoming aware\nof a reportable death, serious injury, or malfunction."
+  },
+  {
+    "question": "What is a 5-day report and when is it required?",
+    "standard_answer": "A 5-day report must be submitted within 5 work days if:\nA remedial action is needed to prevent substantial harm to public health.\nFDA requests it in writing.\n\u201cWork days\u201d exclude weekends and federal holidays. ",
+    "chatbot_answer": "A 5-day report must be submitted within 5 work days if:\nA remedial action is needed to prevent substantial harm to public health.\nFDA requests it in writing.\n\u201cWork days\u201d exclude weekends and federal holidays. "
+  },
+  {
+    "question": "How should device malfunctions be evaluated for reportability?",
+    "standard_answer": "If a malfunction has caused or contributed to a death/serious injury, all future similar malfunctions are presumed to be reportable. This presumption continues until two years have passed without such outcomes or sufficient evidence shows risk is remote. ",
+    "chatbot_answer": "If a malfunction has caused or contributed to a death/serious injury, all future similar malfunctions are presumed to be reportable. This presumption continues until two years have passed without such outcomes or sufficient evidence shows risk is remote. "
+  },
+  {
+    "question": "What constitutes \"user error\" in MDR reporting?",
+    "standard_answer": "User error refers to inappropriate actions by users. Even if the root cause is user error, the event must be reported if it led to or could lead to a serious injury or death. It helps FDA evaluate design usability and training needs.",
+    "chatbot_answer": "User error refers to inappropriate actions by users. Even if the root cause is user error, the event must be reported if it led to or could lead to a serious injury or death. It helps FDA evaluate design usability and training needs."
+  },
+  {
+    "question": "How should literature-based adverse events be handled under MDR?",
+    "standard_answer": "If an adverse event is identified in scientific literature that reasonably suggests your device may have caused or contributed to a death or serious injury, it must be reported. Manufacturers must document evaluations even if the event is ultimately determined not to be reportable.",
+    "chatbot_answer": "If an adverse event is identified in scientific literature that reasonably suggests your device may have caused or contributed to a death or serious injury, it must be reported. Manufacturers must document evaluations even if the event is ultimately determined not to be reportable."
+  },
+  {
+    "question": "What should be included in the manufacturer's MDR written procedures?",
+    "standard_answer": "Written procedures must cover:\nIdentification and evaluation of reportable events.\nTimely submission of reports.\nInvestigation of complaints.\nDocumentation and maintenance of event files.\nThis is required under 21 CFR 803.17.",
+    "chatbot_answer": "Written procedures must cover:\nIdentification and evaluation of reportable events.\nTimely submission of reports.\nInvestigation of complaints.\nDocumentation and maintenance of event files.\nThis is required under 21 CFR 803.17."
+  },
+  {
+    "question": "What is Form FDA 1932 used for?",
+    "standard_answer": "An applicant must report adverse drug experiences2 (ADEs) and product/manufacturing defects on Form FDA 1932.",
+    "chatbot_answer": "An applicant must report adverse drug experiences2 (ADEs) and product/manufacturing defects on Form FDA 1932."
+  },
+  {
+    "question": "Who is considered a Marketing Authorization Holder \n(MAH)?",
+    "standard_answer": "The MAH is the applicant (sometimes referred to as the company or the firm) or the nonapplicant (such as the firm\u2019s distributor).  The MAH is responsible for reporting the AE information to the RA who is responsible for regulating the veterinary medicinal product (VMP).  ",
+    "chatbot_answer": "The Marketing Authorization Holder (MAH) is the applicant, often referred to as the company or firm, or the nonapplicant, such as the firm\u2019s distributor. \nThe MAH is responsible for reporting adverse event (AE) information to the regulatory authority (RA) overseeing the veterinary medicinal product (VMP).\n\n"
+  },
+  {
+    "question": "What information is required in Part A of Form FDA 1932?",
+    "standard_answer": "1.Regulatory Authority (RA) (Open Ended Text)             2.Marketing Authorization Holder (MAH)     \n3.Person(s) Involved in the AER  4. AER Information ",
+    "chatbot_answer": "1.Regulatory Authority (RA) (Open Ended Text)             2.Marketing Authorization Holder (MAH)     \n3.Person(s) Involved in the AER  4. AER Information "
+  },
+  {
+    "question": "What type of information is included in Part B of the form?",
+    "standard_answer": "1. Animal Data                2. VMP(s) Data and Usage         3. Adverse Event Data \n 4. Dechallenge-Rechallenge Information       5.  Assessment of AE                  \n6. Report Number(s) of Linked Report(s) 7. Supplemental Documents      \n8. HL7 ICSR Wrapper Data Elements                ",
+    "chatbot_answer": "The provided context does not specify the content of Part B of Form FDA 1932. It mainly discusses the general guidance for completing the form, \ninformation on revisions, and the process of submitting the form, but it doesn't detail the specific information included in Part B.\n\n"
+  },
+  {
+    "question": "What does \"Three-Day NADA/ANADA Field Alert Report\" mean?",
+    "standard_answer": "The Three-Day NADA/ANADA Field Alert Report contains information pertaining to the VMP that is the subject of the manufacturing/product defect(s) that may result in serious adverse events.",
+    "chatbot_answer": "The \"Three-Day NADA/ANADA Field Alert Report\" refers to a report that must be submitted by the applicant within three days of identifying product and \nmanufacturing defects that may lead to serious adverse drug events (ADEs). This report must be sent to the appropriate FDA District Office or local FDA resident post,\n and can be provided by telephone or other telecommunication means, followed by prompt written follow-up. The report contains information pertaining to the \nveterinary medical product (VMP) associated with the defects and should be submitted on Form FDA 1932 in accordance with 21 CFR 514.80(b)(1)."
+  },
+  {
+    "question": "How is the \"Original Receive Date\" defined for an adverse event report?",
+    "standard_answer": "The original receive date is the date of first receipt of information by the MAH responsible for reporting the AER to the FDA. ",
+    "chatbot_answer": "The original receive date is the date of first receipt of information by the MAH responsible for reporting the AER to the FDA. "
+  },
+  {
+    "question": "When is a 15-Day Alert Report required?",
+    "standard_answer": "Adverse drug event cases must be reported as a Fifteen-day NADA/ANADA Alert Report if they are serious and unexpected. If the manufacturing/product defect is associated with a serious and unexpected adverse drug event, the applicant must submit a Fifteen-day NADA/ANADA Alert. ",
+    "chatbot_answer": "Adverse drug event cases must be reported as a Fifteen-day NADA/ANADA Alert Report if they are serious and unexpected. If the manufacturing/product defect is associated with a serious and unexpected adverse drug event, the applicant must submit a Fifteen-day NADA/ANADA Alert. "
+  },
+  {
+    "question": "What are \"Spontaneous\" and \"Non-Spontaneous\" reports?",
+    "standard_answer": "A spontaneous report is an AER that is voluntarily reported to the MAH for the identification of possible AEs following the use of a marketed VMP(s). A non spontaneous report is an AER that is reported to the MAH for the identification of possible AEs following the use of a marketed VMP(s) in planned studies (such as clinical or marketing studies).",
+    "chatbot_answer": "A spontaneous report is an AER that is voluntarily reported to the MAH for the identification of possible AEs following the use of a marketed VMP(s). A non spontaneous report is an AER that is reported to the MAH for the identification of possible AEs following the use of a marketed VMP(s) in planned studies (such as clinical or marketing studies)."
+  },
+  {
+    "question": "How should medication errors be handled in veterinary \nreporting?",
+    "standard_answer": "There is no CVM regulatory reporting requirement for medication errors. However, medication error reports are of great value to FDA.",
+    "chatbot_answer": "There is no CVM regulatory reporting requirement for medication errors. However, medication error reports are of great value to FDA."
+  },
+  {
+    "question": "What data elements are required for electronic submissions?",
+    "standard_answer": "Refer to the List of Attached Document Kind for a list of files that are acceptable for electronic submission. ",
+    "chatbot_answer": "Refer to the List of Attached Document Kind for a list of files that are acceptable for electronic submission. "
+  },
+  {
+    "question": "What is the purpose of the Needlestick MDR guidance?",
+    "standard_answer": "The purpose of this revised Needlestick Guidance document is to provide user facilities, manufacturers, and importers with user-friendly information about their roles and obligations for reporting adverse events related to these products.",
+    "chatbot_answer": "The purpose of the revised Needlestick Guidance document is to provide user facilities, manufacturers, and importers with user-friendly\n information about their roles and obligations for reporting adverse events related to needlestick-related products. It also offers \ninformation for healthcare workers to report adverse events to the FDA through the voluntary MedWatch reporting system."
+  },
+  {
+    "question": "Which types of adverse events are mandatory to report related to needlesticks?",
+    "standard_answer": "The document was designed to provide guidance to user facilities, manufacturers, and importers to use for determining when an adverse event involving a needlestick, or a device intended to prevent a needlestick, would require the submission of a mandatory medical device death, serious injury, or malfunction report to the FDA.",
+    "chatbot_answer": "The document was designed to provide guidance to user facilities, manufacturers, and importers to use for determining when an adverse event involving a needlestick, or a device intended to prevent a needlestick, would require the submission of a mandatory medical device death, serious injury, or malfunction report to the FDA."
+  },
+  {
+    "question": "Who is responsible for submitting MDR reports for needlestick events?",
+    "standard_answer": "User facilities, manufacturers, and importers each have specific, legally defined responsibilities under 21 CFR Part 803 to ensure appropriate and timely MDR reporting for needlestick injuries",
+    "chatbot_answer": "User facilities, manufacturers, and importers each have specific, legally defined responsibilities under 21 CFR Part 803 to ensure appropriate and timely MDR reporting for needlestick injuries"
+  },
+  {
+    "question": "What is the definition of a \u201cserious injury\u201d under this guidance?",
+    "standard_answer": "A serious injury report should be submitted by a user facility, importer and manufacturer if the deviceresulted in an injury to an individual and the injury was life-threatening, resulted in permanent impairment of a body function or permanent damage to a body structure, or necessitated medical or surgical intervention to preclude permanent impairment of a body function or permanent damage to a body structure.",
+    "chatbot_answer": "A serious injury report should be submitted by a user facility, importer and manufacturer if the deviceresulted in an injury to an individual and the injury was life-threatening, resulted in permanent impairment of a body function or permanent damage to a body structure, or necessitated medical or surgical intervention to preclude permanent impairment of a body function or permanent damage to a body structure."
+  },
+  {
+    "question": "What constitutes a device malfunction in the context of needlesticks?",
+    "standard_answer": "A malfunction is the failure of a device to meet its performance specifications or to perform as intended. If a person who is exposed to infectious materials via a needlestick that resulted from a device failure is subsequently treated medically or surgically to prevent permanent impairment, then the event becomes reportable by the user facility, importer, and manufacturer as a serious injury report. ",
+    "chatbot_answer": "A malfunction is the failure of a device to meet its performance specifications or to perform as intended. If a person who is exposed to infectious materials via a needlestick that resulted from a device failure is subsequently treated medically or surgically to prevent permanent impairment, then the event becomes reportable by the user facility, importer, and manufacturer as a serious injury report. "
+  },
+  {
+    "question": "Which forms are used for reporting by user facilities and importers?",
+    "standard_answer": "Form 3500 A",
+    "chatbot_answer": "User facilities use FDA Form 3500A to submit medical device adverse event reports to the FDA and the device manufacturer. \nAdditionally, they are required to submit an annual report on FDA Form 3419. Importers also use FDA Form 3500A for reporting \nmedical device adverse events to the FDA and the manufacturer."
+  },
+  {
+    "question": "How is first aid treatment distinguished from medical intervention?",
+    "standard_answer": "We do not consider first aid to constitute medical intervention, and this type of intervention will not require an MDR report. Examples of first aid are the application of a bandage or simple cleaning of the site of a needlestick. In addition, we do not consider an in-vitro diagnostic test for blood-borne diseases to constitute medical intervention. However, administration of a tetanus shot, a gamma globulin shot or stitches is considered medical intervention.",
+    "chatbot_answer": "We do not consider first aid to constitute medical intervention, and this type of intervention will not require an MDR report. Examples of first aid are the application of a bandage or simple cleaning of the site of a needlestick. In addition, we do not consider an in-vitro diagnostic test for blood-borne diseases to constitute medical intervention. However, administration of a tetanus shot, a gamma globulin shot or stitches is considered medical intervention."
+  },
+  {
+    "question": "Are voluntary reports accepted under this guidance?",
+    "standard_answer": "Yes, voluntary reports are accepted under the Needlestick Medical Device Reporting (MDR) guidance.",
+    "chatbot_answer": "Yes, voluntary reports concerning needlestick-related events are accepted under the Needlestick MDR guidance. \nHealthcare workers are encouraged to report malfunctions involving needlesticks to the device manufacturer or to the FDA \nthrough the FDA MedWatch Voluntary Reporting Program using FDA Form 3500."
+  },
+  {
+    "question": "What triggers manufacturer baseline reporting obligations?",
+    "standard_answer": "Manufacturer is required to submit a baseline report, on FDA Form 3417, for a device when the device model is first reported as required by Parts 803.50 and 803.52. 21 CFR Part 803.55",
+    "chatbot_answer": "Manufacturer is required to submit a baseline report, on FDA Form 3417, for a device when the device model is first reported as required by Parts 803.50 and 803.52. 21 CFR Part 803.55"
+  },
+  {
+    "question": "What is the intended use of hysteroscopically-placed tubal implants?",
+    "standard_answer": "Permanent female sterilization by bilaterally occluding the fallopian tubes.",
+    "chatbot_answer": "Permanent female sterilization by bilaterally occluding the fallopian tubes."
+  },
+  {
+    "question": "What type of procedure is female sterilization considered?",
+    "standard_answer": "Female sterilization\u2014including the use of hysteroscopically-placed tubal implants, is considered a permanent, non-reversible contraceptive procedure.",
+    "chatbot_answer": "Female sterilization\u2014including the use of hysteroscopically-placed tubal implants, is considered a permanent, non-reversible contraceptive procedure."
+  },
+  {
+    "question": "What are common risks associated with surgical \nbilateral tubal ligation?",
+    "standard_answer": "However, there are certain risks of surgical BTL, including, but not limited to, adverse eventsrelated togeneral anesthesia, possible physical injury to local organs (e.g., bowel), and bleeding. Some of these adverse events, although uncommon, may result in hospitalization and/or re-operation.",
+    "chatbot_answer": "Common risks associated with surgical bilateral tubal ligation (BTL) include adverse events related to general anesthesia, \npossible physical injury to local organs (e.g., bowel), bleeding, and, although uncommon, may lead to hospitalization and/or re-operation."
+  },
+  {
+    "question": "Why did FDA issue new labeling guidance for tubal \nimplants?",
+    "standard_answer": "The FDA acted to improve patient safety, informed consent, and transparency in response to\nincreasing concerns about long-term outcomes of ",
+    "chatbot_answer": "The FDA acted to improve patient safety, informed consent, and transparency in response to\nincreasing concerns about long-term outcomes of "
+  },
+  {
+    "question": "What is the purpose of the boxed warning recommended\n in the guidance?",
+    "standard_answer": "FDA believes this will help to ensure a woman receives and understands the benefits and risks associated with her contraceptive options so that she can make an informed decision as to hether a permanent hysteroscopically-placed tubal implant intended for sterilization is the right choice for her. ",
+    "chatbot_answer": "FDA believes this will help to ensure a woman receives and understands the benefits and risks associated with her contraceptive options so that she can make an informed decision as to hether a permanent hysteroscopically-placed tubal implant intended for sterilization is the right choice for her. "
+  },
+  {
+    "question": "What key elements should be included in the patient \ndecision checklist?",
+    "standard_answer": "Notification of the permanent (and if applicable, irreversible) nature of sterilization in general, and the implant more specifically;  \n\u00b7 recognition of available alternative contraceptive modalities and their safety and \neffectiveness; \n\u00b7 situations in which the device should not be used or implanted (e.g., contraindications); \n\u00b7 steps, if any, that need to be followed before the implant can be relied upon for \ncontraception, and the importance of compliance with those steps; \n\u00b7 information on effectiveness and chances for unintended pregnancy and ectopic \npregnancy, including a statement that no contraceptive device is 100% effective; \n\u00b7 significant and/or common adverse events, including patient-reported outcomes, which \nmay occur during or immediately following device placement; \n\u00b7 clinically significant longer-term adverse events or outcomes that have been reported in \nclinical trials or via other device use experience \u2013 including significant events that may \npersist from the time of implantation and those that may appear for the first time later \nafter implantation; \n\u00b7 a brief discussion of the types of signs, symptoms or events that may represent device\nrelated complications for which the patient should seek prompt evaluation; \n\u00b7 a disclosure of the device materials and any risks that may be associated with them, \nincluding allergy/hypersensitivity and Magnetic Resonance Imaging (MRI) safety \ninformation, if applicable; and information related to device removal and/or reversal\n (e.g., reasons for removal, \ntechniques, outcomes).",
+    "chatbot_answer": "Notification of the permanent (and if applicable, irreversible) nature of sterilization in general, and the implant more specifically;  \n\u00b7 recognition of available alternative contraceptive modalities and their safety and \neffectiveness; \n\u00b7 situations in which the device should not be used or implanted (e.g., contraindications); \n\u00b7 steps, if any, that need to be followed before the implant can be relied upon for \ncontraception, and the importance of compliance with those steps; \n\u00b7 information on effectiveness and chances for unintended pregnancy and ectopic \npregnancy, including a statement that no contraceptive device is 100% effective; \n\u00b7 significant and/or common adverse events, including patient-reported outcomes, which \nmay occur during or immediately following device placement; \n\u00b7 clinically significant longer-term adverse events or outcomes that have been reported in \nclinical trials or via other device use experience \u2013 including significant events that may \npersist from the time of implantation and those that may appear for the first time later \nafter implantation; \n\u00b7 a brief discussion of the types of signs, symptoms or events that may represent device\nrelated complications for which the patient should seek prompt evaluation; \n\u00b7 a disclosure of the device materials and any risks that may be associated with them, \nincluding allergy/hypersensitivity and Magnetic Resonance Imaging (MRI) safety \ninformation, if applicable; and information related to device removal and/or reversal\n (e.g., reasons for removal, \ntechniques, outcomes)."
+  },
+  {
+    "question": "Why might a waiting period be necessary after implant \nplacement?",
+    "standard_answer": "A waiting period is necessary because it takes about 3 months for tissue to grow into the inserts and block the fallopian tubes. A confirmation test (HSG) is needed to confirm the inserts are correctly placed and the tubes are blocked. Until then, another form of birth control must be used.",
+    "chatbot_answer": "A waiting period is necessary because it takes about 3 months for tissue to grow into the inserts and block the fallopian tubes. A confirmation test (HSG) is needed to confirm the inserts are correctly placed and the tubes are blocked. Until then, another form of birth control must be used."
+  },
+  {
+    "question": "What adverse events have been reported related to \nthese implants?",
+    "standard_answer": "Adverse events that have been reported include perforation of the uterus or fallopian tubes, identification of inserts in the abdominal or pelvic cavity, persistent pain, and suspected allergic or hypersensitivity reactions. Some patients have also reported symptoms that resemble autoimmune diseases or other systemic conditions",
+    "chatbot_answer": "Adverse events that have been reported include perforation of the uterus or fallopian tubes, identification of inserts in the abdominal or pelvic cavity, persistent pain, and suspected allergic or hypersensitivity reactions. Some patients have also reported symptoms that resemble autoimmune diseases or other systemic conditions"
+  },
+  {
+    "question": "How does FDA recommend informing patients about \nrisks and benefits?",
+    "standard_answer": "The FDA recommends that patients be informed about the risks and benefits through a boxed warning and a patient decision checklist as part of the device labeling. These tools are intended to ensure that patients receive and understand information about the device prior to undergoing the procedure",
+    "chatbot_answer": "The FDA recommends that patients be informed about the risks and benefits through a boxed warning and a patient decision checklist as part of the device labeling. These tools are intended to ensure that patients receive and understand information about the device prior to undergoing the procedure"
+  },
+  {
+    "question": "What role did the FDA Advisory Committee play in \nupdating this guidance?",
+    "standard_answer": "The FDA Advisory Committee provided input that helped inform the FDA's actions to address concerns related to hysteroscopically placed tubal implants, including the development of the boxed warning and patient decision checklist recommendations in the updated labeling guidance",
+    "chatbot_answer": "The FDA Advisory Committee's role in updating the guidance was based on the 2015 Panel meeting, during which comments\nmade during the Open Public Hearing and submitted in the associated public docket informed FDA's belief that some women \nare not receiving or understanding information regarding the risks and benefits of permanent, hysteroscopically-placed tubal \nimplants intended for sterilization."
+  },
+  {
+    "question": "What is Real-World Data (RWD)?",
+    "standard_answer": "RWD refers to data relating to patient health status and/or the delivery of healthcare routinely collected from a variety of sources",
+    "chatbot_answer": "Real-World Data (RWD) are data relating to patient health status and/or the delivery of health care routinely collected from a variety of sources. Examples of RWD include data derived from electronic health records (EHRs), claims and billing data, data from product and disease registries, patient-generated data including in home-use settings, and data gathered from other sources that can inform on health status, such as mobile devices."
+  },
+  {
+    "question": "Give examples of RWD sources used in medical device evaluations.",
+    "standard_answer": "RWD refers to data relating to patient health status and/or the delivery of healthcare routinely collected from a variety of sources",
+    "chatbot_answer": "RWD refers to data relating to patient health status and/or the delivery of healthcare routinely collected from a variety of sources"
+  },
+  {
+    "question": "Define Real-World Evidence (RWE).",
+    "standard_answer": "RWE is the clinical evidence regarding the usage and potential benefits or risks of a medical product, derived from the analysis of RWD",
+    "chatbot_answer": "Real-World Evidence (RWE) is the clinical evidence regarding the usage, and potential benefits or risks, of a medical product derived from the analysis of Real-World Data (RWD)."
+  },
+  {
+    "question": "How can RWE be used in premarket and postmarket regulatory decisions?",
+    "standard_answer": "RWE can support various regulatory decisions, including:\nApproval or expansion of device indications,\nPostmarket surveillance,\nSupport for petitions for reclassification,\nEvidence in Humanitarian Device Exemptions,\nUpdates to labeling,\nServing as historical or concurrent controls in clinical studies",
+    "chatbot_answer": "RWE can support various regulatory decisions, including:\nApproval or expansion of device indications,\nPostmarket surveillance,\nSupport for petitions for reclassification,\nEvidence in Humanitarian Device Exemptions,\nUpdates to labeling,\nServing as historical or concurrent controls in clinical studies"
+  },
+  {
+    "question": "What is the importance of data quality when using RWE?",
+    "standard_answer": "Data quality is crucial for ensuring that RWE is reliable. This includes consistent definitions, data collection protocols, quality assurance mechanisms, and clear documentation. High-quality RWE helps ensure valid scientific evidence for regulatory use",
+    "chatbot_answer": "Data quality control is essential for providing confidence in the reliability of Real-World Data (RWD) and Real-World Evidence (RWE) sources. High-quality data can\n improve the credibility of analyses conducted using RWE and ensure that the findings are comparable, or even superior, to those obtained from traditional clinical trials. Evaluating potential RWD sources according to data quality assurance plans and procedures is critical to ensure sufficient reliability, as not all RWD is collected and maintained in a manner that guarantees high-quality outcomes.\n\n"
+  },
+  {
+    "question": "What regulatory pathways may involve RWE use?",
+    "standard_answer": "RWE may be used in Premarket Approval Applications (PMAs), De Novo requests, 510(k) submissions, petitions for reclassification, post-approval studies, and public health surveillance efforts",
+    "chatbot_answer": "RWE may be used in Premarket Approval Applications (PMAs), De Novo requests, 510(k) submissions, petitions for reclassification, post-approval studies, and public health surveillance efforts"
+  },
+  {
+    "question": "How can bias be mitigated in RWE studies?",
+    "standard_answer": "Bias can be reduced through careful study design, predefined protocols, analysis plans, and using representative patient populations. Even retrospective RWD use requires systematic planning to limit confounding and selection bias",
+    "chatbot_answer": "Bias can be reduced through careful study design, predefined protocols, analysis plans, and using representative patient populations. Even retrospective RWD use requires systematic planning to limit confounding and selection bias"
+  },
+  {
+    "question": "What role does FDA\u2019s pre-submission process play for RWE studies?",
+    "standard_answer": "Sponsors should use the pre-submission process to consult FDA on study design, data sources, and analytical methods when planning to use RWE in regulatory submissions",
+    "chatbot_answer": "Sponsors should use the pre-submission process to consult FDA on study design, data sources, and analytical methods when planning to use RWE in regulatory submissions"
+  },
+  {
+    "question": "Why might registries be leveraged for regulatory decisions?",
+    "standard_answer": "Registries provide structured, often high-volume, longitudinal RWD which can support decisions like expanding indications or postmarket surveillance. They can serve as platforms for embedded randomized or observational studies",
+    "chatbot_answer": "Registries provide structured, often high-volume, longitudinal RWD which can support decisions like expanding indications or postmarket surveillance. They can serve as platforms for embedded randomized or observational studies"
+  },
+  {
+    "question": "How does RWE complement traditional clinical trials?",
+    "standard_answer": "RWE complements trials by offering data from broader, real-world patient populations, enabling insights into long-term outcomes and diverse uses not typically captured in controlled trial settings",
+    "chatbot_answer": "RWE complements trials by offering data from broader, real-world patient populations, enabling insights into long-term outcomes and diverse uses not typically captured in controlled trial settings"
+  },
+  {
+    "question": "What is the FDA\u2019s definition of \u201cBenefit-Risk\u201d assessment?",
+    "standard_answer": "A benefit-risk assessment evaluates the benefit a medical device provides to patients against the probability and severity of harm it poses. FDA uses this assessment during compliance investigations and enforcement decisions to ensure actions are appropriate and aligned with public health goals",
+    "chatbot_answer": "A benefit-risk assessment evaluates the benefit a medical device provides to patients against the probability and severity of harm it poses. FDA uses this assessment during compliance investigations and enforcement decisions to ensure actions are appropriate and aligned with public health goals"
+  },
+  {
+    "question": "What patient-focused factors influence benefit-risk decisions?",
+    "standard_answer": "Key patient-focused factors include:\nPatient tolerance of risk: Willingness to use a nonconforming or non-compliant device.\nPreference for availability: Whether patients/caregivers prefer access to the device despite known risks.\nPatient impact: Consequences on health and quality of life if the device is or isn\u2019t available",
+    "chatbot_answer": "Patient-focused factors that influence benefit-risk decisions include:\n\nRisk tolerance varies among patients, affecting their decisions regarding whether the risks associated with a medical device's technology are acceptable in exchange for the anticipated benefits.\n\nPatients\u2019 understanding of device-related risks can differ, and their assessments of risk are often informed by information received from clinicians.\n\nRisk severity is another factor; certain subpopulations may experience higher risk severity, impacting their risk tolerance and decision-making.\n\nPatient or caregiver preferences for product availability can also play a role in benefit-risk assessments."
+  },
+  {
+    "question": "How does FDA assess device risks during compliance investigations?",
+    "standard_answer": "FDA considers:\nSeverity and likelihood of harm\nDuration of patient exposure to risk\nDistribution of nonconforming devices\nPotential diagnostic errors\nReal-world data, medical device reports (MDRs), inspection findings, and clinical literature",
+    "chatbot_answer": "The FDA assesses device risks during compliance investigations by considering available risk information from various potential sources, including:\n\nMedical device reports (MDRs)\nInspection reports\nLiterature\nPrior premarket submissions for the subject device\nClinical studies\nRegistries\nPatient input\nExperienced clinicians\nRisk management documentation voluntarily supplied by the manufacturer\nAdditionally, the FDA evaluates relevant risk factors described in specific guidelines to inform its decisions."
+  },
+  {
+    "question": "What role does the manufacturer\u2019s compliance history play?",
+    "standard_answer": "The FDA examines:\nPast regulatory violations\nResponsiveness to FDA feedback\nProactiveness in addressing issues\nWhether past violations were systemic or repeated",
+    "chatbot_answer": "The FDA examines:\nPast regulatory violations\nResponsiveness to FDA feedback\nProactiveness in addressing issues\nWhether past violations were systemic or repeated"
+  },
+  {
+    "question": "How is \"patient tolerance of risk\" evaluated?",
+    "standard_answer": "It involves assessing how much risk patients are willing to accept for potential benefits, whether they understand the risks, and how this varies by subpopulation or severity. It includes willingness to use devices from noncompliant manufacturers or with known issues.",
+    "chatbot_answer": "It involves assessing how much risk patients are willing to accept for potential benefits, whether they understand the risks, and how this varies by subpopulation or severity. It includes willingness to use devices from noncompliant manufacturers or with known issues."
+  },
+  {
+    "question": "What is meant by \"detectability\" in assessing device safety?",
+    "standard_answer": "Detectability refers to whether a nonconformity can be identified by the manufacturer or user before causing harm. Detectable issues may reduce patient harm if caught early, although not always completely",
+    "chatbot_answer": "Detectability refers to whether nonconformity could be identified, either by the manufacturer or by the user. A nonconformity that can be identified prior to the use of the device may harm fewer patients than one that is not identified beforehand. Additionally, a detected nonconforming device may still cause patient harm, such as a mislabeled implant causing a delay in surgery.\n\n"
+  },
+  {
+    "question": "How can labeling or education be used to mitigate risk?",
+    "standard_answer": "Risk mitigation may include:\nUpdating product labeling to reflect new risks\nLaunching user education programs\nImplementing design or training changes\nThese efforts help prevent misuse or misunderstanding of devices",
+    "chatbot_answer": "Risk mitigation may include:\nUpdating product labeling to reflect new risks\nLaunching user education programs\nImplementing design or training changes\nThese efforts help prevent misuse or misunderstanding of devices"
+  },
+  {
+    "question": "What does \"scope of the device issue\" refer to?",
+    "standard_answer": "It refers to whether the identified risk is limited to one device or manufacturer, or is widespread across similar devices or the industry. Broader scope may call for wider FDA actions",
+    "chatbot_answer": "It refers to whether the identified risk is limited to one device or manufacturer, or is widespread across similar devices or the industry. Broader scope may call for wider FDA actions"
+  },
+  {
+    "question": "What factors contribute to FDA\u2019s enforcement decisions?",
+    "standard_answer": "Factors include:\nSeverity and likelihood of harm\nDevice benefit and availability alternatives\nCompliance history\nPatient impact and tolerance\nScope and system-wide implications of violations",
+    "chatbot_answer": "The FDA's enforcement decisions may be influenced by various factors, including:\n\nThe adequacy of a manufacturer's proposed correction strategy in light of benefit-risk assessments and mitigation activities.\nThe potential risk of harm to patients due to regulatory non-compliance.\nThe degree of certainty regarding the safety, effectiveness, or quality of a device.\nThe type and representativeness of clinical information available, such as clinical trial data and real-world evidence.\nThe benefit and risk factors considered in prioritizing resources for compliance and enforcement to maximize medical device quality and patient safety.\nSpecific factors that influence medical device compliance and enforcement decisions, particularly those that can directly affect product availability."
+  },
+  {
+    "question": "How might systemic violations differ from non-systemic violations?",
+    "standard_answer": "Systemic violations: Widespread issues across the company or multiple processes. Non-systemic violations: Isolated to a specific product, process, or incident. Systemic violations often warrant stronger FDA action",
+    "chatbot_answer": "Systemic violations pertain to widespread issues that affect all devices produced by a manufacturer, such as a design failure, whereas non-systemic violations relate to isolated incidents or issues that do not impact the entire product line. The nature of these violations influences the assessment of product nonconformity and the regulatory actions taken by the FDA."
+  },
+  {
+    "question": "What is the primary purpose of VICH GL35 (GFI214)?",
+    "standard_answer": "The purpose of the FDA Validation Procedure Document is to provide directions to assist users, reporters, and technical staff in the successful validation of the electronic message for AER and PPR for veterinary medicinal products.",
+    "chatbot_answer": "The primary purpose of VICH GL35 (GFI214) is to define the recommended electronic standards for the transfer of pharmacovigilance data for veterinary medicinal products. This guidance aims to facilitate the notification and assimilation of information related to pharmacovigilance among Regulatory Authorities (RA) and Marketing Authorization Holders (MAH) on a worldwide scope."
+  },
+  {
+    "question": "What data structure is recommended for electronic submissions?",
+    "standard_answer": "It recommends using XML as the data structure for electronic submissions of Adverse Event Reports (AERs) and Product Problem Reports (PPRs)GFI214.",
+    "chatbot_answer": "The recommended data structure for electronic submissions is XML, as specified in the FDA Step By Step Document."
+  },
+  {
+    "question": "What is the \"Batch Wrapper\" in electronic message formats?",
+    "standard_answer": "The Batch Wrapper uniquely identifies a batch of reports, includes sender/receiver info, creation date, and the VICH AER version number",
+    "chatbot_answer": "The Batch Wrapper uniquely identifies a batch of reports, includes sender/receiver info, creation date, and the VICH AER version number"
+  },
+  {
+    "question": "What is the purpose of the \u201cTransmission Wrapper\u201d?",
+    "standard_answer": "The Transmission Wrapper uniquely identifies each electronic message within a batch using a Message Number (Root + Extension) and ensures message traceability",
+    "chatbot_answer": "The \"Transmission Wrapper\" organizes the data elements in the batch and transmission messages, ensuring they comply with the ISO 27953-1 specification. It includes information such as the message number and message sender details, which are essential for identifying and transmitting the associated reports."
+  },
+  {
+    "question": "Which message format is recommended for AER submissions?",
+    "standard_answer": "The recommended message format for AER submissions is XML",
+    "chatbot_answer": "The recommended message format for Adverse Event Report (AER) submissions is XML."
+  },
+  {
+    "question": "What information is required in the \"Sender\" section of electronic reports?",
+    "standard_answer": "The \"Sender\" section must include:\n* Sender ID (Root)\n* Organization name (Extension)\n* Title\n* First and last name\n* Telephone number\n* Fax number\n* Email address.\n",
+    "chatbot_answer": "The \"Sender\" section must include:\n* Sender ID (Root)\n* Organization name (Extension)\n* Title\n* First and last name\n* Telephone number\n* Fax number\n* Email address.\n"
+  },
+  {
+    "question": "What is the \u201cVICH AER Version Number\u201d used for?",
+    "standard_answer": "The VICH AER Version Number indicates the message version and release number on which the batch of reports is based.",
+    "chatbot_answer": "The \u201cVICH AER Version Number\u201d indicates the AER Message Version and Release Number on which the batch is based."
+  },
+  {
+    "question": "Why are gateway specifications important in secure transmission?",
+    "standard_answer": "Gateway specifications ensure confidentiality, authentication, integrity, and non-repudiation of electronic pharmacovigilance data during transmission.",
+    "chatbot_answer": "Gateway specifications ensure confidentiality, authentication, integrity, and non-repudiation of electronic pharmacovigilance data during transmission."
+  },
+  {
+    "question": "Who is responsible for assigning unique message identifiers?",
+    "standard_answer": "The sender is responsible for assigning unique message identifiers.",
+    "chatbot_answer": "It is the sender\u2019s responsibility to define and assign the unique message identifiers, ensuring that each message has a unique number."
+  },
+  {
+    "question": "What types of adverse events must be documented?",
+    "standard_answer": "Both serious and non-serious adverse events must be documented.\nA serious adverse event includes outcomes such as:\nDeath, Life-threatening experience, Inpatient hospitalization, Persistent or significant disability/incapacity, Congenital anomaly or birth defect, Even if the product has been discontinued, reports must still be submitted",
+    "chatbot_answer": "Adverse events that must be documented include:\n\nDeath\nA life-threatening experience\nInpatient hospitalization\nA persistent or significant disability or incapacity\nA congenital anomaly or birth defect\nAdditionally, a serious adverse event must be described in terms of signs, symptoms, or disease diagnosis."
+  },
+  {
+    "question": "What is the retention period for adverse event records?",
+    "standard_answer": "All records related to serious and non-serious adverse events must be retained for six years from the date of the report",
+    "chatbot_answer": "All records related to serious and non-serious adverse events must be retained for six years from the date of the report"
+  },
+  {
+    "question": "What reporting obligations do sponsors have?",
+    "standard_answer": "The \u201cresponsible person\u201d (typically the manufacturer, packer, or distributor listed on the product label) is legally required to: Submit serious adverse event reports within 15 business days of receiving them. Include follow-up reports if new medical information is received within one year of the initial report",
+    "chatbot_answer": "The \u201cresponsible person\u201d (typically the manufacturer, packer, or distributor listed on the product label) is legally required to: Submit serious adverse event reports within 15 business days of receiving them. Include follow-up reports if new medical information is received within one year of the initial report"
+  },
+  {
+    "question": "Who is responsible for monitoring adverse events during clinical trials?",
+    "standard_answer": "The manufacturer, packer, or distributor listed on the product label is responsible for monitoring and reporting serious adverse events. The term \u201cresponsible person\u201d is used to describe them",
+    "chatbot_answer": "The manufacturer, packer, or distributor listed on the product label is responsible for monitoring and reporting serious adverse events. The term \u201cresponsible person\u201d is used to describe them"
+  },
+  {
+    "question": "How soon should serious adverse events be reported?",
+    "standard_answer": "Reports must be submitted to FDA within 15 business days of the responsible person receiving the event report",
+    "chatbot_answer": "Reports must be submitted to FDA within 15 business days of the responsible person receiving the event report"
+  },
+  {
+    "question": "How should sponsors handle follow-up information?",
+    "standard_answer": "Any new medical information received within one year of the initial serious adverse event report must also be reported to the FDA within 15 business days of receipt",
+    "chatbot_answer": "Any new medical information received within one year of the initial serious adverse event report must also be reported to the FDA within 15 business days of receipt"
+  },
+  {
+    "question": "What documentation must be available during FDA inspections?",
+    "standard_answer": "During inspections, FDA is authorized to access all adverse event report records that must be maintained, including: The report, Medical updates, Communications with reporters, Internal assessments",
+    "chatbot_answer": "During inspections, FDA is authorized to access all adverse event report records that must be maintained, including: The report, Medical updates, Communications with reporters, Internal assessments"
+  },
+  {
+    "question": "What is the role of recordkeeping in compliance?",
+    "standard_answer": "Proper recordkeeping: Demonstrates compliance with Section 761(e)(1) of the FD&C Act, Ensures traceability and FDA accessibility, Supports public health surveillance",
+    "chatbot_answer": "Proper recordkeeping: Demonstrates compliance with Section 761(e)(1) of the FD&C Act, Ensures traceability and FDA accessibility, Supports public health surveillance"
+  },
+  {
+    "question": "What is the difference between adverse event reporting for investigational vs. approved products?",
+    "standard_answer": "This guidance specifically applies to marketed dietary supplements, not investigational products. For investigational drugs or supplements under clinical trials, different FDA regulations apply, typically under IND or IDE frameworks.",
+    "chatbot_answer": "The provided context does not contain specific information regarding the differences between adverse event reporting for investigational products and approved products. Therefore, I cannot provide an answer to the question based on the given material."
+  },
+  {
+    "question": "How should sponsors handle incomplete or missing data?",
+    "standard_answer": "If a report lacks required elements, the sponsor must follow up with: The initial reporter, The patient Or the healthcare provider (with consent). This ensures that all minimum data elements are collected to make the report valid",
+    "chatbot_answer": "If a report lacks required elements, the sponsor must follow up with: The initial reporter, The patient Or the healthcare provider (with consent). This ensures that all minimum data elements are collected to make the report valid"
+  }
+]
