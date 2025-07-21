@@ -1,0 +1,45 @@
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.stApp > header {
+    background-color: transparent;
+}
+
+/* Fixed top header bar */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Left: title */
+.header-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 60px;
+}
+
+/* Right: dropdown + button */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Add spacing below fixed header
+.block-container {
+    padding-top: 80px !important;
+} */
+
