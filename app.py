@@ -14,7 +14,6 @@ load_css("style.css")
 
 # App config
 st.set_page_config(page_title="ADE Document Assistant", layout="wide")
-# st.subheader("ADE Document Assistant")
 
 # Load API key and models
 api_key = load_api_key()
@@ -26,9 +25,12 @@ doc_config = load_document_config()
 
 st.markdown("""
 <div class="fixed-header">
-    <div class="header-title">ADE Document Assistant</div>
+    <div class="header-container">
+        <div class="header-title">ADE Document Assistant</div>
+    </div>
 </div>
 """, unsafe_allow_html=True)
+
 st.markdown("<p style='margin-bottom: 0.2rem;'>Select FDA Organization</p>", unsafe_allow_html=True)
 with st.container():
     col1, col2 = st.columns([4, 3])
@@ -46,17 +48,18 @@ if load_clicked:
     with message_placeholder:
         with st.spinner(""):
             org_docs = doc_config[selected_org]  # dict of {doc_name: doc_path}
-            for doc_name, doc_path in org_docs.items():
-                if doc_name not in st.session_state:
-                    with open(doc_path, "rb") as f:
-                        text = extract_text_from_pdfs([f])
-                    vectorstore = vectorize_text(text, embeddings)
-                    retriever = vectorstore.as_retriever(search_type="similarity", k=5)
-                    st.session_state[doc_name] = create_qa_chain(model, retriever, prompt_template)
+            all_texts = []
 
-            # Set the first document in the org as active QA chain
-            first_doc_name = next(iter(org_docs))
-            st.session_state.qa_chain = st.session_state[first_doc_name]
+            for doc_name, doc_path in org_docs.items():
+                with open(doc_path, "rb") as f:
+                    text = extract_text_from_pdfs([f])
+                    all_texts.append(text)
+
+            # Combine all text and create a single vectorstore
+            combined_text = "\n".join(all_texts)
+            vectorstore = vectorize_text(combined_text, embeddings)
+            retriever = vectorstore.as_retriever(search_type="similarity", k=5)
+            st.session_state.qa_chain = create_qa_chain(model, retriever, prompt_template)
         
         # Success message replaces the spinner in the same location
         st.text(f"Loaded {len(org_docs)} documents.")
