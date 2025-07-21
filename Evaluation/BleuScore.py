@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 
 nltk.download('punkt_tab')
 # Load JSON data
-with open("documents\qa_pairs.json", "r") as f:
+with open("Evaluation\qa_pairs.json", "r") as f:
     data = json.load(f)
 
 smooth = SmoothingFunction().method1
