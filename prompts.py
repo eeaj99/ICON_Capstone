@@ -17,9 +17,7 @@ def get_prompt_template():
             5. Your response must be clear and properly paraphrased when necessary and properly formatted.
          
             Language Policy:
-            - Always respond in English, regardless of the language of the source text.
-            - If the relevant passage is in another language (e.g., Spanish), translate it to English before presenting your answer.
-            - Do not include foreign-language text in the final response.
+            1.Respond in the same language as the question and document uploaded.
         """),
         ("human", "Context:\n{context}\n\nQuestion:\n{question}")
     ])

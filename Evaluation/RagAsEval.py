@@ -9,8 +9,10 @@ from ragas.metrics import (
     context_recall,
     answer_correctness
 )
+from collections import defaultdict
+import math
 
-os.environ["OPENAI_API_KEY"] = "sk......"  # Replace with your actual API key
+#os.environ["OPENAI_API_KEY"] = "" 
 
 # Load JSON with raw string to avoid path escape errors
 with open("Evaluation\qa_pairs.json", "r", encoding="utf-8") as f:
@@ -40,12 +42,27 @@ result = evaluate(
         answer_correctness
     ]
 )
+# 🔁 Calculate total and count for each metric
+totals = defaultdict(float)
+counts = defaultdict(int)
 
-print("\n RAGAS Evaluation Results:")
-for i, score_dict in enumerate(result.scores):
-    print(f"\nSample {i+1}")
-    for metric, value in score_dict.items():
-        print(f"{metric}: {value}")
+for sample_scores in result.scores:
+    for metric, value in sample_scores.items():
+        if value is not None and not math.isnan(value):
+            totals[metric] += value
+            counts[metric] += 1
+
+# ✅ Print average score per metric
+print("\n📊 Average RAGAS Scores Across All Questions:")
+for metric in totals:
+    average = totals[metric] / counts[metric]
+    print(f"{metric}: {average:.4f}")
+
+# print("\n RAGAS Evaluation Results:")
+# for i, score_dict in enumerate(result.scores):
+#     print(f"\nSample {i+1}")
+#     for metric, value in score_dict.items():
+#         print(f"{metric}: {value}")
 
 
 
