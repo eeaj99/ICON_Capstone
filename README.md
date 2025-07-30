@@ -1,5 +1,6 @@
 ADE Document Assistant:
 The ADE Document Assistant is a document-aware conversational AI application developed to support Adverse Event (AE) reporting for pharmaceutical and medical device products. It leverages Retrieval-Augmented Generation (RAG) techniques using OpenAI’s LLMs and LangChain to provide precise, contextually grounded answers based on internal FDA documentation.
+Source FDA-Document- https://www.fda.gov/regulatory-information/search-fda-guidance-documents
 
 Features:
 RAG-powered QA : Accurate question answering over FDA-issued PDFs using similarity-based retrieval.
@@ -37,6 +38,6 @@ cd ICON_Capstone
 2. Install Dependencies -
 `pip install -r requirements.txt`
 3. Set Up Environment Variables -
-Update the `.env` file with your `OpenAI API key:`
+Update the `.env` file with your `OpenAI API key`
 5. Run the App -
 `streamlit run app.py`
