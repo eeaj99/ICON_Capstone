@@ -32,11 +32,11 @@ dotenv— environment config
 
 Setup Instructions:
 1. Clone the Repository
-git clone https://gitlab.com/your-org/ICON_Capstone.git
+`git clone https://gitlab.com/your-org/ICON_Capstone.git`
 cd ICON_Capstone
 2. Install Dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 3. Set Up Environment Variables
-Update the `.env` file with your OpenAI API key:
+Update the `.env` file with your `OpenAI API key:`
 5. Run the App
-streamlit run app.py
+`streamlit run app.py`
